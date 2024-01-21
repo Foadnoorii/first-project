@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viwport" content="width-device-width,initial-scal-1.0">
     <title>RESTORAN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="STYLE.css">
@@ -37,10 +38,26 @@
     </nav>
 </div>
 <div id="menubtn">
-    <img src="image/3325539051.jpg" alt="" id="menu">
+    <img src="image/bx-menu.svg.jpg" alt="" id="menu">
 </div>
 <script>
-    var menubBtn = document.getElementById("menuBtn");
+    var menubtn = document.getElementById("menubtn");
+    var sidenav = document.getElementById("sidenav");
+    var menu = document.getElementById("menu");
+    sidenav.style.right ="-250px";
+    menubtn.onclick = function (){
+        if (sidenav.style.right == "-250px")
+        {
+            sidenav.style.right = "0";
+            menu.src="image/close.png";
+
+        }
+        else
+        {
+            sidenav.style.right="-250px"
+            menu.src = "image/bx-menu.svg";
+        }
+    }
 
 </script>
 
