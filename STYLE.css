@@ -79,3 +79,26 @@ nav ul li{
     text-align: center;
     font-size: 20px;
 }
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background-color: var(--btn-color);
+    position: fixed;
+    text-align: center;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img
+{
+    width: 20px;
+    margin-top: 15px;
+}
